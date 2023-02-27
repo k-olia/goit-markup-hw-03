@@ -11,46 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <!-- navigation-->
-      <nav class="header-navigation">
-        <a class="header-logo" href="./index.html"
-          ><span class="span-logo">Web</span>Studio</a
-        >
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link" href="./index.html">Studio</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link" href="./contacts.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+        <header class="header">
+      <div class="container header-list">
+        <!-- navigation-->
+        <nav class="header-navigation">
+          <a class="header-logo" href="./index.html">
+            <span class="span-logo">Web</span>Studio</a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <address class="address">
-        <ul class="address-list list">
-          <li class="address-phone">
-            <a class="address-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-email">
-            <a class="address-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-phone">
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-email">
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
-    <main class="main">
+    <main class="main ">
       <!--Filters-->
       <section>
+        <div class="container">
               <h1 class="visually-hidden">Portfolio page</h1>
         <ul class="filter-list list">
           <li class="filter-list-item">
@@ -75,88 +79,89 @@
       <!--Projects-->
 
         <ul class="projects-section-list list">
-          <li class="projects-section-item-firstLine"> <a class="projects-card" href" ">
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.1.jpg"
               alt="different screens of app"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Banking App Interface Concept</h2>
             <p class="projects-section-type">App</p></a>
-          </li>
-          <li class="projects-section-item-firstLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.2.jpg"
               alt="phone with QR reader on the screen"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Cashless Payment</h2>
             <p class="projects-section-type">Marketing</p></a>
-          </li>
-          <li class="projects-section-item-firstLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.3.jpg"
               alt="laptop and phone with the same app on the screen"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Meditaion App</h2>
             <p class="projects-section-type">App</p></a>
-          </li>
-          <li class="projects-section-item-secondLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.4.jpg"
               alt="steering wheel with hands on it and a phone abow"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Taxi Service</h2>
             <p class="projects-section-type">Marketing</p></a>
-          </li>
-          <li class="projects-section-item-secondLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.5.jpg"
               alt="different screen backgrounds with the Moon and cliffs"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Screen Illustrations</h2>
             <p class="projects-section-type">Design</p></a>
-          </li>
-          <li class="projects-section-item-secondLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.6.jpg"
               alt="Girl with headphones and phone"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Online Courses</h2>
             <p class="projects-section-type">Marketing</p></a>
-          </li>
-          <li class="projects-section-item-thirdLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.7.jpg"
               alt="screenshots of instagram stories"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Instagram Stories Concept</h2>
             <p class="projects-section-type">Design</p></a>
-          </li>
-          <li class="projects-section-item-thirdLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.8.jpg"
               alt="woman with a bag and friuts inside of it"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Organic Food</h2>
             <p class="projects-section-type">Web Site</p></a>
-          </li>
-          <li class="projects-section-item-thirdLine"> <a class="projects-card" href" ">
+            </div></li>
+          <li class="projects-section-item"> <a class="projects-card" href" ">
             <img
               src="./images/img1.9.jpg"
               alt="moment of adding milk into the Coffee"
               width="360"
-            />
+            /><div class="portfolio-card">
             <h2 class="projects-section-name">Fresh Coffee</h2>
             <p class="projects-section-type">Web Site</p></a>
-          </li>
+            </div></li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
