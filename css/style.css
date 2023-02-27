@@ -16,10 +16,15 @@ p {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -60,6 +65,7 @@ ul {
   display: flex;
   height: 72px;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-navigation {
   display: flex;
@@ -71,7 +77,7 @@ ul {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  margin-right: 36px;
+  margin-right: 76px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
@@ -130,10 +136,9 @@ ul {
 /*---------------------footer--------------- */
 .footer {
   background: var(--text-color);
+  padding: 100px 0;
 }
 .footer-card {
-  padding: 100px auto;
-  margin: 100px auto;
 }
 .footer-link {
   text-decoration: none;
@@ -167,7 +172,6 @@ ul {
 .hero {
   height: 600px;
   background: var(--text-color);
-  margin-bottom: 120px;
 }
 .hero-container {
   display: flex;
@@ -210,7 +214,7 @@ ul {
 }
 /*----------------------------Values---------------------*/
 .values-section {
-  padding: 120px auto;
+  padding: 120px 0;
 }
 
 .values-section-list {
@@ -245,7 +249,6 @@ ul {
 }
 /*----------------------------Doing---------------------*/
 .doing-section {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .doing-section-header {
@@ -361,7 +364,7 @@ ul {
   cursor: pointer;
 }
 .filter-list-item-btn:hover,
-:focus {
+.filter-list-item-btn:focus {
   background: var(--hover-btn);
   color: var(--main-background);
 }
@@ -371,31 +374,39 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--universal-gap);
+  column-gap: var(--universal-gap);
+  row-gap: 48px;
   justify-content: center;
   padding-left: 0;
   padding-top: 72px;
 }
 
 .projects-section-item {
-  margin: 48px, var(--universal-gap);
+  border: 1px solid #e7e9fc;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-card {
-  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  min-height: 56px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 10px;
+  gap: 0;
 }
 .projects-section-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2px;
+  line-height: 1.2;
   margin-bottom: 8px;
+
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
 .projects-section-type {
   font-size: 16px;
-  line-height: 1.5px;
-
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
