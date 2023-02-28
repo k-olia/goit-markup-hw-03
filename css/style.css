@@ -66,12 +66,10 @@ img {
 /* -----------header----------- */
 .header-list {
   display: flex;
-  gap: 40px;
+
   align-items: center;
 }
 .header {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid var(--footer-text-color);
 }
 .header-navigation {
@@ -95,22 +93,26 @@ img {
   color: var(--logo-color);
 }
 
-.header-item {
-  padding: 24px 0px;
+.header-item:not(:first-child) {
+  padding-left: 20px;
+}
+.header-item:not(:last-child) {
+  padding-right: 20px;
 }
 .header-link {
+  display: inline-block;
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding: 24px 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   letter-spacing: 0.02em;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--hover-btn);
-  background-color: var(--main-background);
 }
 
 /* ------------address-------------- */
@@ -131,7 +133,6 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--hover-btn);
-  background-color: var(--main-background);
 }
 .address-phone {
 }
@@ -181,6 +182,8 @@ img {
 .hero {
   height: 600px;
   background: var(--text-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-container {
   display: flex;
@@ -196,8 +199,7 @@ img {
   line-height: 1.07;
   /* or 107% */
 
-  padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   text-align: center;
   letter-spacing: 0.02em;
 
@@ -276,7 +278,6 @@ img {
 
 .doing-section-list {
   display: flex;
-  align-items: center;
   gap: var(--universal-gap);
   padding-left: 0;
 }
@@ -308,9 +309,8 @@ img {
   padding-left: 0;
 }
 
-.team-section-item {
-  min-width: 232px;
-}
+/* .team-section-item {
+} */
 .card {
   text-align: center;
   background: #ffffff;
@@ -353,7 +353,6 @@ img {
 } */
 .filter-list-item-btn {
   font-family: inherit;
-  display: inline-block;
   padding: 12px 24px;
 
   /* CLOUD */
@@ -376,7 +375,6 @@ img {
 }
 .filter-list-item-btn:hover,
 .filter-list-item-btn:focus {
-  background: var(--hover-btn);
   color: var(--main-background);
 }
 /* ----------------------------------Projects section--------------------- */
@@ -384,10 +382,8 @@ img {
 .projects-section-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   column-gap: var(--universal-gap);
   row-gap: 48px;
-  justify-content: center;
   padding-left: 0;
 }
 
